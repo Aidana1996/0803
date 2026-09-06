@@ -68,7 +68,11 @@ jobs:
             ./ _site/
           echo "Published files: $(find _site -type f | wc -l)"
 
+      # enablement turns Pages on via the API on the first run, so the repo
+      # needs no manual Settings change.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:

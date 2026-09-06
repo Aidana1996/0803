@@ -96,9 +96,9 @@ store.
 ## Deploying to GitHub Pages
 
 `.github/workflows/deploy.yml` builds and publishes the site on every push to
-`main` or the feature branch. One-time setup in the repository:
-
-**Settings → Pages → Build and deployment → Source: GitHub Actions.**
+`main` or the feature branch. No manual setup is needed — `configure-pages` runs
+with `enablement: true`, so the first run turns Pages on itself and sets the
+source to GitHub Actions.
 
 The workflow checks that the derived assets (product artwork, font subsets) are
 present and regenerates them if they are not, so a partial checkout still
