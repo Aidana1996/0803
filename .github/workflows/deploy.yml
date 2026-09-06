@@ -1,0 +1,85 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - claude/womens-apparel-storefront-wzdsch
+  workflow_dispatch:
+
+# Allow the workflow to publish to Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time; let a running one finish rather than cancelling it.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # The site is plain static files, but the artwork and the font subsets are
+      # derived. Both are committed; regenerate only what is actually missing so
+      # a fresh or partial checkout still deploys a complete site.
+      - name: Generate product artwork if missing
+        run: |
+          if [ ! -f assets/img/products/airlift-legging--black.svg ]; then
+            echo "Product artwork missing — generating."
+            node tools/gen-images.mjs
+          else
+            echo "Product artwork present — skipping generation."
+          fi
+
+      - name: Fetch fonts if missing
+        run: |
+          if [ ! -f assets/fonts/jost-var.woff2 ]; then
+            echo "Fonts missing — fetching from Google Fonts."
+            node tools/fetch-fonts.mjs
+          else
+            echo "Fonts present — skipping fetch."
+          fi
+
+      - name: Check every page is present
+        run: |
+          missing=0
+          for page in index.html shop.html product.html reserve.html visit.html \
+                      about.html journal.html article.html sizing.html help.html 404.html; do
+            if [ ! -f "$page" ]; then echo "MISSING: $page"; missing=1; fi
+          done
+          test "$missing" -eq 0
+
+      # Publish only what the browser needs — no .git, tooling or CI config.
+      - name: Assemble the site
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude '.git' --exclude '.github' --exclude 'tools' \
+            --exclude 'node_modules' --exclude '_site' \
+            ./ _site/
+          echo "Published files: $(find _site -type f | wc -l)"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

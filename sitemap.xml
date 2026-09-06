@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/index.html</loc>
+    <loc>https://aidana1996.github.io/0803/index.html</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>/shop.html</loc>
+    <loc>https://aidana1996.github.io/0803/shop.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>/product.html</loc>
+    <loc>https://aidana1996.github.io/0803/visit.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aidana1996.github.io/0803/product.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>/reserve.html</loc>
+    <loc>https://aidana1996.github.io/0803/reserve.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>/visit.html</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>/about.html</loc>
+    <loc>https://aidana1996.github.io/0803/about.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>/journal.html</loc>
+    <loc>https://aidana1996.github.io/0803/journal.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>/article.html</loc>
+    <loc>https://aidana1996.github.io/0803/article.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>/sizing.html</loc>
+    <loc>https://aidana1996.github.io/0803/sizing.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>/help.html</loc>
+    <loc>https://aidana1996.github.io/0803/help.html</loc>
     <priority>0.6</priority>
   </url>
 </urlset>

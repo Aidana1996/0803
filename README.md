@@ -92,3 +92,19 @@ published as-is.
 Cart, checkout, payments, accounts, order history and any server-side code. The
 brief was everything up to the point of sale, because the sale happens in the
 store.
+
+## Deploying to GitHub Pages
+
+`.github/workflows/deploy.yml` builds and publishes the site on every push to
+`main` or the feature branch. One-time setup in the repository:
+
+**Settings → Pages → Build and deployment → Source: GitHub Actions.**
+
+The workflow checks that the derived assets (product artwork, font subsets) are
+present and regenerates them if they are not, so a partial checkout still
+deploys a complete site. It publishes everything except `.git`, `.github` and
+`tools`.
+
+The site lands at `https://<owner>.github.io/<repo>/`. All internal links are
+relative, so it works from a subpath without changes. If you move it to a custom
+domain, update the absolute URLs in `robots.txt` and `sitemap.xml`.
