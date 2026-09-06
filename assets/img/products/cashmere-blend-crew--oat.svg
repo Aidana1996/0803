@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" aria-label="Cashmere-Blend Crew in Oat">
+  <defs>
+    <linearGradient id="bg-cashmere-blend-crew-oat" x1="0" y1="0" x2=".3" y2="1">
+      <stop offset="0" stop-color="#d3cec5"/><stop offset="1" stop-color="#bfb8ae"/>
+    </linearGradient>
+    <radialGradient id="glow-cashmere-blend-crew-oat" cx=".5" cy=".32" r=".62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g-cashmere-blend-crew-oat" x1=".15" y1="0" x2=".85" y2="1">
+      <stop offset="0" stop-color="#ddd2c1"/><stop offset=".55" stop-color="#d6c9b4"/><stop offset="1" stop-color="#c9b89d"/>
+    </linearGradient>
+    <filter id="blur-cashmere-blend-crew-oat" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="grain-cashmere-blend-crew-oat" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bg-cashmere-blend-crew-oat)"/>
+  <ellipse cx="500" cy="400" rx="520" ry="440" fill="url(#glow-cashmere-blend-crew-oat)"/>
+  <g transform="translate(-213.1 -163.0) scale(1.4262)">
+    <path d="M386 268 C420 258 452 290 500 290 C548 290 580 258 614 268 L706 320 C726 470 738 610 744 752 L670 768 C666 600 662 520 656 452 C656 600 660 720 662 830 C552 856 448 856 338 830 C340 720 344 600 344 452 C340 500 336 560 332 676 L260 660 C264 580 274 470 294 320 Z" fill="#2b2118" opacity=".13" transform="translate(18 22)" filter="url(#blur-cashmere-blend-crew-oat)"/>
+    <path d="M386 268 C420 258 452 290 500 290 C548 290 580 258 614 268 L706 320 C726 470 738 610 744 752 L670 768 C666 600 662 520 656 452 C656 600 660 720 662 830 C552 856 448 856 338 830 C340 720 344 600 344 452 C340 500 336 560 332 676 L260 660 C264 580 274 470 294 320 Z" fill="url(#g-cashmere-blend-crew-oat)"/><path d="M338 806 C448 830 552 830 662 806" fill="none" stroke="#b9a37f" stroke-width="3" stroke-linecap="round" opacity=".5"/><path d="M262 636 L738 636" fill="none" stroke="#b9a37f" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grain-cashmere-blend-crew-oat)" opacity=".9"/>
+</svg>

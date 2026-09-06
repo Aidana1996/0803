@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop All — 0803</title>
+<meta name="description" content="Every piece on the 0803 floor in Santa Ana, with live in-store availability by size and colour.">
+<meta name="theme-color" content="#f7f4ef">
+<meta property="og:title" content="Shop All — 0803">
+<meta property="og:description" content="Every piece on the 0803 floor in Santa Ana, with live in-store availability by size and colour.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/editorial/hero.svg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/jost-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Now open at 2590 Red Hill Ave, Santa Ana, CA 92705</span><span>Reserve online — try on and pay in store</span>
+    <span>Complimentary styling appointments</span><span>Free hems on full-price bottoms</span>
+    <span>Now open at 2590 Red Hill Ave, Santa Ana, CA 92705</span><span>Reserve online — try on and pay in store</span>
+    <span>Complimentary styling appointments</span><span>Free hems on full-price bottoms</span>
+  </div>
+</div>
+<header class="header">
+  <div class="wrap">
+    <div class="header__inner">
+      <div style="display:flex;align-items:center;gap:1rem">
+        <nav class="nav nav--main" aria-label="Collections">
+          <a class="nav__link" href="shop.html">Shop All</a>
+          <a class="nav__link" href="shop.html?collection=studio">Studio</a>
+          <a class="nav__link" href="shop.html?collection=everyday">Everyday</a>
+          <a class="nav__link" href="shop.html?collection=outerwear">Outerwear</a>
+          <a class="nav__link" href="shop.html?collection=accessories">Accessories</a>
+        </nav>
+        <button class="burger" data-open="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+      <a class="logo" href="index.html" aria-label="0803 home">0803</a>
+      <div style="display:flex;align-items:center;justify-content:flex-end">
+        <nav class="nav nav--end" aria-label="Utility">
+          <a class="nav__link" href="visit.html">Visit Us</a>
+          <button class="icon-btn" data-open="search" aria-label="Search"><span class="label">Search</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+          </button>
+          <button class="icon-btn" data-open="reserve" aria-label="Open fitting room">
+            <span class="label">Fitting Room</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6 8h12l1 12H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+            <span class="bag-count" data-bag-count hidden>0</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="panel panel--left" id="menu" role="dialog" aria-label="Menu" aria-modal="true">
+  <div class="panel__head">
+    <span class="panel__title">Menu</span>
+    <button class="close-btn" data-close aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+  </div>
+  <div class="panel__body">
+    <nav class="menu-list">
+      <a href="shop.html">Shop All</a>
+      <a href="shop.html?collection=studio">Studio</a>
+      <a href="shop.html?collection=everyday">Everyday</a>
+      <a href="shop.html?collection=outerwear">Outerwear</a>
+      <a href="shop.html?collection=accessories">Accessories</a>
+      <a href="visit.html">Visit the Store</a>
+      <a href="about.html">Our Story</a>
+      <a href="journal.html">Journal</a>
+      <a href="sizing.html">Size &amp; Fit</a>
+      <a href="help.html">Help</a>
+    </nav>
+    <p class="small muted" style="margin-top:2rem">2590 Red Hill Ave, Santa Ana, CA 92705<br>
+      <a href="tel:+17145550803">(714) 555-0803</a></p>
+  </div>
+</div>
+
+<div class="panel" id="reserve-drawer" role="dialog" aria-label="Fitting room" aria-modal="true">
+  <div class="panel__head">
+    <span class="panel__title">Your fitting room</span>
+    <button class="close-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+  </div>
+  <div class="panel__body" id="reserve-body"></div>
+  <div class="panel__foot" id="reserve-foot"></div>
+</div>
+
+<div class="search" id="search" role="dialog" aria-label="Search">
+  <div class="wrap">
+    <div class="search__bar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" style="width:22px;height:22px;flex:none"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+      <input id="search-input" type="search" placeholder="Search pieces, fabrics, colours" autocomplete="off">
+      <button class="close-btn" data-close aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+    </div>
+    <div class="search__results" id="search-results"></div>
+  </div>
+</div>
+
+<div class="panel panel--left" id="filters" role="dialog" aria-label="Filters" aria-modal="true">
+  <div class="panel__head">
+    <span class="panel__title">Filter</span>
+    <button class="close-btn" data-close aria-label="Close filters"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+  </div>
+  <div class="panel__body" id="filter-body"></div>
+  <div class="panel__foot"><button class="btn btn--block" data-close>Show results</button></div>
+</div>
+
+<main id="main">
+  <section class="wrap" style="padding-top:clamp(2.4rem,5vw,4.4rem);padding-bottom:clamp(1.6rem,3vw,2.6rem)">
+    <p class="eyebrow" id="shop-eyebrow">The whole rack</p>
+    <h1 class="h1" id="shop-title">Everything</h1>
+    <p class="lede" id="shop-lede" style="margin-top:1.2rem">The full floor at 2590 Red Hill Avenue — every piece, every colourway, with what is physically in stock today.</p>
+    <div class="chips" style="margin-top:2rem">
+      <button class="chip is-active" data-quick-collection="">All</button>
+      <button class="chip" data-quick-collection="studio">Studio</button>
+      <button class="chip" data-quick-collection="everyday">Everyday</button>
+      <button class="chip" data-quick-collection="outerwear">Outerwear</button>
+      <button class="chip" data-quick-collection="accessories">Accessories</button>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="toolbar">
+      <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+        <button class="chip" data-open="filters" style="display:inline-flex;align-items:center;gap:.5rem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" style="width:14px;height:14px"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
+          Filter
+        </button>
+        <span class="small muted" id="result-count">—</span>
+      </div>
+      <label style="display:flex;align-items:center;gap:.7rem">
+        <span class="sr-only">Sort by</span>
+        <select class="select" id="sort">
+          <option value="featured">Featured</option>
+          <option value="popular">Best selling</option>
+          <option value="new">Newest</option>
+          <option value="stock">Most in store</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+        </select>
+      </label>
+    </div>
+    <div class="chips chips--active" id="active-chips"></div>
+  </div>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="grid grid--products" id="shop-grid"></div>
+    </div>
+  </section>
+
+  <section class="section--tight rule">
+    <div class="wrap center" style="padding-block:clamp(2.6rem,5vw,4rem)">
+      <p class="eyebrow">Not sure of your size?</p>
+      <h2 class="h2" style="max-width:20ch;margin-inline:auto">Book an hour and we will pull the rack for you.</h2>
+      <p style="margin-top:1.8rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
+        <a class="btn" href="visit.html#appointments">Book a fitting</a>
+        <a class="btn btn--ghost" href="sizing.html">Size &amp; fit guide</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <span class="footer__logo">0803</span>
+        <p style="max-width:32ch;font-size:.9rem;line-height:1.7">A women's apparel store in Santa Ana. Everything we make hangs on one floor, at one address, and we would rather you tried it on.</p>
+        <form data-signup style="margin-top:1.8rem;max-width:330px">
+          <label class="tiny" for="signup-email" style="display:block;margin-bottom:.7rem;color:#cfc9c0">New arrivals &amp; in-store events</label>
+          <div class="field">
+            <input id="signup-email" type="email" placeholder="Email address" aria-label="Email address" required>
+            <button type="submit">Join</button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">Everything</a></li>
+          <li><a href="shop.html?collection=studio">Studio</a></li>
+          <li><a href="shop.html?collection=everyday">Everyday</a></li>
+          <li><a href="shop.html?collection=outerwear">Outerwear</a></li>
+          <li><a href="shop.html?collection=accessories">Accessories</a></li>
+          <li><a href="reserve.html">Your fitting room</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="visit.html">2590 Red Hill Ave</a></li>
+          <li><a href="visit.html#hours">Store hours</a></li>
+          <li><a href="visit.html#appointments">Book a styling session</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=2590+Red+Hill+Ave+Santa+Ana+CA+92705" target="_blank" rel="noopener">Get directions</a></li>
+          <li><a href="tel:+17145550803">(714) 555-0803</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="help.html">How reserving works</a></li>
+          <li><a href="sizing.html">Size &amp; fit</a></li>
+          <li><a href="help.html#exchanges">Exchanges</a></li>
+          <li><a href="help.html#alterations">Alterations</a></li>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="journal.html">Journal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; <span data-year>2026</span> 0803. Santa Ana, California.</span>
+      <span>Prices in USD. Online reservations are held 48 hours.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/shop.js"></script>
+</body>
+</html>

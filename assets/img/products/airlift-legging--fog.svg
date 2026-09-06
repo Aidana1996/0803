@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" aria-label="Airlift Legging in Fog">
+  <defs>
+    <linearGradient id="bg-airlift-legging-fog" x1="0" y1="0" x2=".3" y2="1">
+      <stop offset="0" stop-color="#cfcdc9"/><stop offset="1" stop-color="#bab8b3"/>
+    </linearGradient>
+    <radialGradient id="glow-airlift-legging-fog" cx=".5" cy=".32" r=".62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g-airlift-legging-fog" x1=".15" y1="0" x2=".85" y2="1">
+      <stop offset="0" stop-color="#c2c0b9"/><stop offset=".55" stop-color="#b9b6ae"/><stop offset="1" stop-color="#a8a59b"/>
+    </linearGradient>
+    <filter id="blur-airlift-legging-fog" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="grain-airlift-legging-fog" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bg-airlift-legging-fog)"/>
+  <ellipse cx="500" cy="400" rx="520" ry="440" fill="url(#glow-airlift-legging-fog)"/>
+  <g transform="translate(-57.9 -100.9) scale(1.1158)">
+    <path d="M382 232 C372 300 360 350 358 400 C356 470 372 560 385 700 C396 830 402 960 404 1078 L470 1078 C474 950 480 840 490 720 L500 660 L510 720 C520 840 526 950 530 1078 L596 1078 C598 960 604 830 615 700 C628 560 644 470 642 400 C640 350 628 300 618 232 Z" fill="#2b2118" opacity=".13" transform="translate(18 22)" filter="url(#blur-airlift-legging-fog)"/>
+    <path d="M382 232 C372 300 360 350 358 400 C356 470 372 560 385 700 C396 830 402 960 404 1078 L470 1078 C474 950 480 840 490 720 L500 660 L510 720 C520 840 526 950 530 1078 L596 1078 C598 960 604 830 615 700 C628 560 644 470 642 400 C640 350 628 300 618 232 Z" fill="url(#g-airlift-legging-fog)"/><path d="M358 316 C440 300 560 300 642 316" fill="none" stroke="#938f82" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grain-airlift-legging-fog)" opacity=".9"/>
+</svg>

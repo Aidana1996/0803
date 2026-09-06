@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="0803 campaign imagery">
+  <defs>
+    <linearGradient id="sky-collection-outerwear" x1="0" y1="0" x2=".4" y2="1">
+      <stop offset="0" stop-color="#eeeee6"/><stop offset="1" stop-color="#dfe1d4"/>
+    </linearGradient>
+    <radialGradient id="sun-collection-outerwear" cx=".68" cy=".22" r=".55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain-collection-outerwear" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#sky-collection-outerwear)"/>
+  <ellipse cx="816.0000000000001" cy="330" rx="600" ry="510.00000000000006" fill="url(#sun-collection-outerwear)"/>
+  <path d="M0 535.3070987654321 C 272.0195473251029 236.73225308641972 720.6584362139919 663.2677469135803 1200 343.3661265432099 L 1200 1500 L 0 1500 Z" fill="#eeeee6" opacity="0.95"/>
+  <path d="M0 792.0023148148148 C 430.83744855967075 408.7442129629628 677.2826646090535 956.255787037037 1200 545.6221064814813 L 1200 1500 L 0 1500 Z" fill="#dfe1d4" opacity="0.89"/>
+  <path d="M0 976.891975308642 C 335.7664609053498 760.270061728395 858.2124485596709 1069.7299382716049 1200 837.6350308641976 L 1200 1500 L 0 1500 Z" fill="#c7ccb8" opacity="0.83"/>
+  <path d="M0 1234.9760802469134 C 326.8065843621399 928.8097993827158 788.4477880658437 1366.1902006172836 1200 1038.1548996913577 L 1200 1500 L 0 1500 Z" fill="#aab199" opacity="0.77"/>
+  <path d="M0 1471.2546296296296 C 263.9578189300411 1151.8634259259259 892.988683127572 1608.1365740740741 1200 1265.931712962963 L 1200 1500 L 0 1500 Z" fill="#8c9679" opacity="0.71"/>
+  <rect width="1200" height="1500" filter="url(#grain-collection-outerwear)" opacity=".9"/>
+</svg>

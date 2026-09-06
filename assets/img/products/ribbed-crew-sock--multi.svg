@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" aria-label="Ribbed Crew Sock — 3 Pack in Bone / Black / Fog">
+  <defs>
+    <linearGradient id="bg-ribbed-crew-sock-multi" x1="0" y1="0" x2=".3" y2="1">
+      <stop offset="0" stop-color="#cfcdc9"/><stop offset="1" stop-color="#bab8b2"/>
+    </linearGradient>
+    <radialGradient id="glow-ribbed-crew-sock-multi" cx=".5" cy=".32" r=".62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g-ribbed-crew-sock-multi" x1=".15" y1="0" x2=".85" y2="1">
+      <stop offset="0" stop-color="#d2cdc4"/><stop offset=".55" stop-color="#c9c3b8"/><stop offset="1" stop-color="#bab2a4"/>
+    </linearGradient>
+    <filter id="blur-ribbed-crew-sock-multi" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="grain-ribbed-crew-sock-multi" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bg-ribbed-crew-sock-multi)"/>
+  <ellipse cx="500" cy="400" rx="520" ry="440" fill="url(#glow-ribbed-crew-sock-multi)"/>
+  <g transform="translate(-389.2 -219.7) scale(1.5200)">
+    <path d="M424 300 L576 300 L576 556 C576 598 590 622 622 638 L714 684 C744 699 744 742 714 756 L524 814 C472 830 424 794 424 748 Z" fill="#2b2118" opacity=".13" transform="translate(18 22)" filter="url(#blur-ribbed-crew-sock-multi)"/>
+    <path d="M424 300 L576 300 L576 556 C576 598 590 622 622 638 L714 684 C744 699 744 742 714 756 L524 814 C472 830 424 794 424 748 Z" fill="url(#g-ribbed-crew-sock-multi)"/><path d="M424 352 L576 352" fill="none" stroke="#a69c8a" stroke-width="3" stroke-linecap="round" opacity=".5"/><path d="M424 392 L576 392" fill="none" stroke="#a69c8a" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grain-ribbed-crew-sock-multi)" opacity=".9"/>
+</svg>

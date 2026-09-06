@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="0803 campaign imagery">
+  <defs>
+    <linearGradient id="sky-collection-everyday" x1="0" y1="0" x2=".4" y2="1">
+      <stop offset="0" stop-color="#efe7db"/><stop offset="1" stop-color="#e3d7c6"/>
+    </linearGradient>
+    <radialGradient id="sun-collection-everyday" cx=".68" cy=".22" r=".55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain-collection-everyday" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#sky-collection-everyday)"/>
+  <ellipse cx="816.0000000000001" cy="330" rx="600" ry="510.00000000000006" fill="url(#sun-collection-everyday)"/>
+  <path d="M0 514.6887860082304 C 228.31172839506172 288.27803497942386 762.6286008230453 611.7219650205761 1200 369.13901748971193 L 1200 1500 L 0 1500 Z" fill="#efe7db" opacity="0.95"/>
+  <path d="M0 744.9025205761316 C 370.09259259259255 526.4936985596706 942.4009773662552 838.5063014403291 1200 604.4968492798353 L 1200 1500 L 0 1500 Z" fill="#e3d7c6" opacity="0.89"/>
+  <path d="M0 1009.977366255144 C 284.6512345679012 677.5565843621399 879.812242798354 1152.4434156378602 1200 796.2782921810699 L 1200 1500 L 0 1500 Z" fill="#d3c3ad" opacity="0.83"/>
+  <path d="M0 1214.9133230452674 C 311.98765432098764 978.966692386831 699.8623971193416 1316.0333076131685 1200 1063.2333461934154 L 1200 1500 L 0 1500 Z" fill="#bfa98f" opacity="0.77"/>
+  <path d="M0 1444.710390946502 C 312.10185185185185 1218.2240226337449 827.5514403292182 1541.7759773662551 1200 1299.1120113168724 L 1200 1500 L 0 1500 Z" fill="#a68a6d" opacity="0.71"/>
+  <rect width="1200" height="1500" filter="url(#grain-collection-everyday)" opacity=".9"/>
+</svg>

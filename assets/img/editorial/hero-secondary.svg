@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1750" width="1400" height="1750" role="img" aria-label="0803 campaign imagery">
+  <defs>
+    <linearGradient id="sky-hero-secondary" x1="0" y1="0" x2=".4" y2="1">
+      <stop offset="0" stop-color="#e6dfd6"/><stop offset="1" stop-color="#cfc6bd"/>
+    </linearGradient>
+    <radialGradient id="sun-hero-secondary" cx=".68" cy=".22" r=".55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain-hero-secondary" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1400" height="1750" fill="url(#sky-hero-secondary)"/>
+  <ellipse cx="952.0000000000001" cy="385" rx="700" ry="595" fill="url(#sun-hero-secondary)"/>
+  <path d="M0 622.360853909465 C 444.37877229080925 281.5978652263375 987.6637517146777 768.4021347736625 1400 403.29893261316874 L 1400 1750 L 0 1750 Z" fill="#e6dfd6" opacity="0.95"/>
+  <path d="M0 844.903420781893 C 290.03669410150894 484.7414480452675 1018.0772033607683 999.2585519547325 1400 613.3707240226338 L 1400 1750 L 0 1750 Z" fill="#cfc6bd" opacity="0.89"/>
+  <path d="M0 1077.0061728395062 C 492.82424554183814 663.9845679012346 1076.8471364883403 1254.0154320987656 1400 811.4922839506173 L 1400 1750 L 0 1750 Z" fill="#adaaa4" opacity="0.83"/>
+  <path d="M0 1277.835776748971 C 329.40809327846364 921.4105581275718 959.8068844307271 1430.5894418724279 1400 1048.7052790637858 L 1400 1750 L 0 1750 Z" fill="#8b8a86" opacity="0.77"/>
+  <path d="M0 1476.5588991769548 C 476.45490397805213 1184.102752057613 812.7897805212621 1601.897247942387 1400 1288.5513760288065 L 1400 1750 L 0 1750 Z" fill="#65666a" opacity="0.71"/>
+  <path d="M0 1702.3422067901233 C 490.63134430727024 1379.144483024691 781.6291580932785 1840.8555169753085 1400 1494.5722415123455 L 1400 1750 L 0 1750 Z" fill="#41434a" opacity="0.65"/>
+  <rect width="1400" height="1750" filter="url(#grain-hero-secondary)" opacity=".9"/>
+</svg>

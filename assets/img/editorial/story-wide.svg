@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1120" width="2000" height="1120" role="img" aria-label="0803 campaign imagery">
+  <defs>
+    <linearGradient id="sky-story-wide" x1="0" y1="0" x2=".4" y2="1">
+      <stop offset="0" stop-color="#efe7db"/><stop offset="1" stop-color="#e3d7c6"/>
+    </linearGradient>
+    <radialGradient id="sun-story-wide" cx=".68" cy=".22" r=".55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain-story-wide" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="2000" height="1120" fill="url(#sky-story-wide)"/>
+  <ellipse cx="1360" cy="246.4" rx="1000" ry="380.8" fill="url(#sun-story-wide)"/>
+  <path d="M0 400.3884773662552 C 362.6354595336077 175.02880658436212 1346.1719821673526 496.9711934156379 2000 255.51440329218104 L 2000 1120 L 0 1120 Z" fill="#efe7db" opacity="0.95"/>
+  <path d="M0 542.1934979423868 C 469.9245541838134 306.5962551440329 1216.0086591220852 643.163744855967 2000 390.7381275720164 L 2000 1120 L 0 1120 Z" fill="#e3d7c6" opacity="0.89"/>
+  <path d="M0 667.717037037037 C 487.39883401920434 478.8674074074074 1376.354595336077 748.6525925925926 2000 546.3137037037037 L 2000 1120 L 0 1120 Z" fill="#d3c3ad" opacity="0.83"/>
+  <path d="M0 840.4257613168724 C 581.7249657064472 533.1755967078188 1535.543124142661 972.1044032921809 2000 642.9077983539094 L 2000 1120 L 0 1120 Z" fill="#bfa98f" opacity="0.77"/>
+  <path d="M0 944.5863374485598 C 519.5696159122085 758.8541563786009 1401.9075788751716 1024.1858436213993 2000 825.1870781893006 L 2000 1120 L 0 1120 Z" fill="#a68a6d" opacity="0.71"/>
+  <path d="M0 1088.4654320987654 C 467.599451303155 885.2364197530862 1183.7812928669412 1175.5635802469135 2000 957.818209876543 L 2000 1120 L 0 1120 Z" fill="#8c7156" opacity="0.65"/>
+  <rect width="2000" height="1120" filter="url(#grain-story-wide)" opacity=".9"/>
+</svg>

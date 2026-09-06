@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" aria-label="Rib Longline Bra in Black">
+  <defs>
+    <linearGradient id="bg-rib-longline-bra-black" x1="0" y1="0" x2=".3" y2="1">
+      <stop offset="0" stop-color="#ebebed"/><stop offset="1" stop-color="#d4d4d8"/>
+    </linearGradient>
+    <radialGradient id="glow-rib-longline-bra-black" cx=".5" cy=".32" r=".62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g-rib-longline-bra-black" x1=".15" y1="0" x2=".85" y2="1">
+      <stop offset="0" stop-color="#24242b"/><stop offset=".55" stop-color="#16161a"/><stop offset="1" stop-color="#0a0a0c"/>
+    </linearGradient>
+    <filter id="blur-rib-longline-bra-black" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="grain-rib-longline-bra-black" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bg-rib-longline-bra-black)"/>
+  <ellipse cx="500" cy="400" rx="520" ry="440" fill="url(#glow-rib-longline-bra-black)"/>
+  <g transform="translate(-260.0 -61.6) scale(1.5200)">
+    <path d="M352 452 C352 402 366 374 400 362 C440 348 470 366 500 386 C530 366 560 348 600 362 C634 374 648 402 648 452 C648 540 646 610 642 664 C548 686 452 686 358 664 C354 610 352 540 352 452 Z" fill="#2b2118" opacity=".13" transform="translate(18 22)" filter="url(#blur-rib-longline-bra-black)"/>
+    <path d="M352 452 C352 402 366 374 400 362 C440 348 470 366 500 386 C530 366 560 348 600 362 C634 374 648 402 648 452 C648 540 646 610 642 664 C548 686 452 686 358 664 C354 610 352 540 352 452 Z" fill="url(#g-rib-longline-bra-black)"/><path d="M392 368 C374 320 348 276 326 232" fill="none" stroke="url(#g-rib-longline-bra-black)" stroke-width="16" stroke-linecap="round"/><path d="M608 368 C626 320 652 276 674 232" fill="none" stroke="url(#g-rib-longline-bra-black)" stroke-width="16" stroke-linecap="round"/><path d="M356 512 C452 534 548 534 644 512" fill="none" stroke="#373741" stroke-width="3" stroke-linecap="round" opacity=".5"/><path d="M356 592 C452 614 548 614 644 592" fill="none" stroke="#373741" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grain-rib-longline-bra-black)" opacity=".9"/>
+</svg>

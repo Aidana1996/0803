@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="0803 campaign imagery">
+  <defs>
+    <linearGradient id="sky-collection-studio" x1="0" y1="0" x2=".4" y2="1">
+      <stop offset="0" stop-color="#e6dfd6"/><stop offset="1" stop-color="#cfc6bd"/>
+    </linearGradient>
+    <radialGradient id="sun-collection-studio" cx=".68" cy=".22" r=".55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain-collection-studio" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#sky-collection-studio)"/>
+  <ellipse cx="816.0000000000001" cy="330" rx="600" ry="510.00000000000006" fill="url(#sun-collection-studio)"/>
+  <path d="M0 534.3796296296297 C 326.4578189300412 239.05092592592592 933.6136831275721 660.9490740740741 1200 344.52546296296293 L 1200 1500 L 0 1500 Z" fill="#e6dfd6" opacity="0.95"/>
+  <path d="M0 751.3526234567901 C 339.7201646090535 510.3684413580246 924.9601337448561 854.6315586419752 1200 596.4342206790122 L 1200 1500 L 0 1500 Z" fill="#cfc6bd" opacity="0.89"/>
+  <path d="M0 1026.5200617283951 C 379.0936213991769 636.1998456790122 890.6121399176955 1193.8001543209878 1200 775.5999228395061 L 1200 1500 L 0 1500 Z" fill="#adaaa4" opacity="0.83"/>
+  <path d="M0 1264.8819444444443 C 304.5781893004115 854.0451388888887 955.5697016460906 1440.9548611111109 1200 1000.7725694444442 L 1200 1500 L 0 1500 Z" fill="#8b8a86" opacity="0.77"/>
+  <path d="M0 1491.4382716049383 C 216.17386831275718 1101.4043209876543 944.8328189300412 1658.5956790123457 1200 1240.7021604938273 L 1200 1500 L 0 1500 Z" fill="#65666a" opacity="0.71"/>
+  <rect width="1200" height="1500" filter="url(#grain-collection-studio)" opacity=".9"/>
+</svg>

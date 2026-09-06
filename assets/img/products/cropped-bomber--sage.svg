@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" aria-label="Cropped Bomber in Sage">
+  <defs>
+    <linearGradient id="bg-cropped-bomber-sage" x1="0" y1="0" x2=".3" y2="1">
+      <stop offset="0" stop-color="#ecedeb"/><stop offset="1" stop-color="#d7d8d4"/>
+    </linearGradient>
+    <radialGradient id="glow-cropped-bomber-sage" cx=".5" cy=".32" r=".62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g-cropped-bomber-sage" x1=".15" y1="0" x2=".85" y2="1">
+      <stop offset="0" stop-color="#a7af9a"/><stop offset=".55" stop-color="#98a189"/><stop offset="1" stop-color="#8c967b"/>
+    </linearGradient>
+    <filter id="blur-cropped-bomber-sage" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="grain-cropped-bomber-sage" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bg-cropped-bomber-sage)"/>
+  <ellipse cx="500" cy="400" rx="520" ry="440" fill="url(#glow-cropped-bomber-sage)"/>
+  <g transform="translate(-207.3 -111.3) scale(1.4146)">
+    <path d="M382 262 C416 250 452 288 500 288 C548 288 584 250 618 262 L710 316 C730 460 742 570 746 706 L672 722 C666 552 662 496 658 452 C658 580 662 676 664 772 C552 800 448 800 336 772 C338 676 342 580 342 452 C338 496 334 552 330 656 L256 640 C260 560 270 460 290 316 Z" fill="#2b2118" opacity=".13" transform="translate(18 22)" filter="url(#blur-cropped-bomber-sage)"/>
+    <path d="M382 262 C416 250 452 288 500 288 C548 288 584 250 618 262 L710 316 C730 460 742 570 746 706 L672 722 C666 552 662 496 658 452 C658 580 662 676 664 772 C552 800 448 800 336 772 C338 676 342 580 342 452 C338 496 334 552 330 656 L256 640 C260 560 270 460 290 316 Z" fill="url(#g-cropped-bomber-sage)"/><path d="M500 300 L500 786" fill="none" stroke="#bbc1b1" stroke-width="3" stroke-linecap="round" opacity=".5"/><path d="M336 742 C448 768 552 768 664 742" fill="none" stroke="#bbc1b1" stroke-width="3" stroke-linecap="round" opacity=".5"/><path d="M262 618 L338 604" fill="none" stroke="#bbc1b1" stroke-width="3" stroke-linecap="round" opacity=".5"/><path d="M738 618 L662 604" fill="none" stroke="#bbc1b1" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grain-cropped-bomber-sage)" opacity=".9"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 2100" width="1800" height="2100" role="img" aria-label="0803 campaign imagery">
+  <defs>
+    <linearGradient id="sky-hero" x1="0" y1="0" x2=".4" y2="1">
+      <stop offset="0" stop-color="#efe7db"/><stop offset="1" stop-color="#e3d7c6"/>
+    </linearGradient>
+    <radialGradient id="sun-hero" cx=".68" cy=".22" r=".55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain-hero" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1800" height="2100" fill="url(#sky-hero)"/>
+  <ellipse cx="1224" cy="462" rx="900" ry="714" fill="url(#sun-hero)"/>
+  <path d="M0 774.4002057613169 C 358.5632716049382 268.9994855967078 1076.3310185185187 991.0005144032922 1800 449.4997427983539 L 1800 2100 L 0 2100 Z" fill="#efe7db" opacity="0.95"/>
+  <path d="M0 979.5142489711934 C 327.34567901234567 515.7143775720165 1282.795138888889 1178.2856224279835 1800 681.3571887860082 L 1800 2100 L 0 2100 Z" fill="#e3d7c6" opacity="0.89"/>
+  <path d="M0 1228.7671810699587 C 415.29475308641975 652.0820473251026 1400.7175925925926 1475.917952674897 1800 858.0410236625512 L 1800 2100 L 0 2100 Z" fill="#d3c3ad" opacity="0.83"/>
+  <path d="M0 1389.1590020576132 C 412.4104938271605 1010.602494855967 1167.5983796296296 1551.397505144033 1800 1145.8012474279835 L 1800 2100 L 0 2100 Z" fill="#bfa98f" opacity="0.77"/>
+  <path d="M0 1663.6897119341563 C 468.6929012345679 1083.775720164609 1220.9375 1912.224279835391 1800 1290.8878600823045 L 1800 2100 L 0 2100 Z" fill="#a68a6d" opacity="0.71"/>
+  <path d="M0 1835.3593106995886 C 374.141975308642 1414.1017232510287 1298.234953703704 2015.8982767489713 1800 1564.5508616255145 L 1800 2100 L 0 2100 Z" fill="#8c7156" opacity="0.65"/>
+  <path d="M0 2023.1677983539093 C 638.7577160493828 1704.0805041152262 1136.9907407407406 2159.9194958847734 1800 1818.0402520576129 L 1800 2100 L 0 2100 Z" fill="#efe7db" opacity="0.59"/>
+  <rect width="1800" height="2100" filter="url(#grain-hero)" opacity=".9"/>
+</svg>

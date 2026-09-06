@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img" aria-label="Map of 2590 Red Hill Avenue, Santa Ana">
+  <defs>
+    <linearGradient id="land" x1="0" y1="0" x2=".4" y2="1">
+      <stop offset="0" stop-color="#f2ede4"/><stop offset="1" stop-color="#e7e0d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="700" fill="url(#land)"/>
+  <!-- blocks -->
+  <g fill="#e0d8c9">
+    <rect x="60" y="70" width="230" height="150" rx="4"/>
+    <rect x="60" y="260" width="230" height="180" rx="4"/>
+    <rect x="60" y="480" width="230" height="150" rx="4"/>
+    <rect x="360" y="70" width="260" height="150" rx="4"/>
+    <rect x="360" y="480" width="260" height="150" rx="4"/>
+    <rect x="700" y="70" width="240" height="180" rx="4"/>
+    <rect x="700" y="300" width="240" height="140" rx="4"/>
+    <rect x="700" y="490" width="240" height="140" rx="4"/>
+  </g>
+  <!-- freeway 55 -->
+  <path d="M0 640 C 220 610 300 520 340 380 C 380 240 420 120 520 0" stroke="#d3c6ae" stroke-width="46" fill="none"/>
+  <path d="M0 640 C 220 610 300 520 340 380 C 380 240 420 120 520 0" stroke="#c8b99e" stroke-width="2" fill="none" stroke-dasharray="14 12"/>
+  <!-- avenues -->
+  <g stroke="#ffffff" fill="none">
+    <path d="M320 0 V700" stroke-width="26"/>
+    <path d="M660 0 V700" stroke-width="20"/>
+    <path d="M0 240 H1000" stroke-width="20"/>
+    <path d="M0 460 H1000" stroke-width="26"/>
+  </g>
+  <!-- labels -->
+  <g font-family="Jost, Futura, Helvetica, Arial, sans-serif" font-size="15" fill="#8c857b" letter-spacing="2">
+    <text x="332" y="120" transform="rotate(90 332 120)">RED HILL AVE</text>
+    <text x="672" y="120" transform="rotate(90 672 120)">PULLMAN ST</text>
+    <text x="80" y="232">ALTON AVE</text>
+    <text x="80" y="452">MACARTHUR BLVD</text>
+    <text x="120" y="646" transform="rotate(-12 120 646)">CA-55</text>
+  </g>
+  <!-- pin -->
+  <g transform="translate(320 460)">
+    <ellipse cx="0" cy="8" rx="26" ry="8" fill="#191817" opacity=".16"/>
+    <path d="M0 4c0 0 22-24 22-40A22 22 0 1 0-22-36C-22-20 0 4 0 4Z" fill="#a97a62"/>
+    <circle cx="0" cy="-37" r="8" fill="#f7f4ef"/>
+    <g font-family="Jost, Futura, Helvetica, Arial, sans-serif" font-size="17" fill="#191817" letter-spacing="2.5">
+      <rect x="26" y="-52" width="248" height="40" rx="20" fill="#f7f4ef" stroke="#e5e0d7"/>
+      <text x="48" y="-25">0803 · 2590 RED HILL</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" aria-label="Sunday Rib Dress in Espresso">
+  <defs>
+    <linearGradient id="bg-sunday-rib-dress-espresso" x1="0" y1="0" x2=".3" y2="1">
+      <stop offset="0" stop-color="#eeebea"/><stop offset="1" stop-color="#dad5d3"/>
+    </linearGradient>
+    <radialGradient id="glow-sunday-rib-dress-espresso" cx=".5" cy=".32" r=".62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g-sunday-rib-dress-espresso" x1=".15" y1="0" x2=".85" y2="1">
+      <stop offset="0" stop-color="#5d493c"/><stop offset=".55" stop-color="#4a3a30"/><stop offset="1" stop-color="#3b2e26"/>
+    </linearGradient>
+    <filter id="blur-sunday-rib-dress-espresso" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="grain-sunday-rib-dress-espresso" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bg-sunday-rib-dress-espresso)"/>
+  <ellipse cx="500" cy="400" rx="520" ry="440" fill="url(#glow-sunday-rib-dress-espresso)"/>
+  <g transform="translate(-45.0 -33.9) scale(1.0901)">
+    <path d="M402 258 C440 276 560 276 598 258 C604 320 608 372 610 420 C616 520 628 700 644 1010 C548 1042 452 1042 356 1010 C372 700 384 520 390 420 C392 372 396 320 402 258 Z" fill="#2b2118" opacity=".13" transform="translate(18 22)" filter="url(#blur-sunday-rib-dress-espresso)"/>
+    <path d="M402 258 C440 276 560 276 598 258 C604 320 608 372 610 420 C616 520 628 700 644 1010 C548 1042 452 1042 356 1010 C372 700 384 520 390 420 C392 372 396 320 402 258 Z" fill="url(#g-sunday-rib-dress-espresso)"/><rect fill="url(#g-sunday-rib-dress-espresso)" x="404" y="176" width="20" height="96" rx="10"/><rect fill="url(#g-sunday-rib-dress-espresso)" x="576" y="176" width="20" height="96" rx="10"/><path d="M398 380 C450 392 550 392 602 380" fill="none" stroke="#755c4c" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grain-sunday-rib-dress-espresso)" opacity=".9"/>
+</svg>

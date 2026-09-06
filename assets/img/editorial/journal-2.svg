@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="0803 campaign imagery">
+  <defs>
+    <linearGradient id="sky-journal-2" x1="0" y1="0" x2=".4" y2="1">
+      <stop offset="0" stop-color="#f3e9e2"/><stop offset="1" stop-color="#e8d5c8"/>
+    </linearGradient>
+    <radialGradient id="sun-journal-2" cx=".68" cy=".22" r=".55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".7"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain-journal-2" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky-journal-2)"/>
+  <ellipse cx="816.0000000000001" cy="198" rx="600" ry="306" fill="url(#sun-journal-2)"/>
+  <path d="M0 311.0391975308642 C 250.55864197530866 167.4020061728395 810.8076131687243 372.5979938271605 1200 218.70100308641975 L 1200 900 L 0 900 Z" fill="#f3e9e2" opacity="0.95"/>
+  <path d="M0 472.5007716049382 C 254.56172839506172 251.99807098765424 851.6911008230453 567.0019290123456 1200 330.7490354938271 L 1200 900 L 0 900 Z" fill="#e8d5c8" opacity="0.89"/>
+  <path d="M0 594.879012345679 C 351.3425925925926 434.3024691358025 750.2134773662552 663.6975308641976 1200 491.6512345679012 L 1200 900 L 0 900 Z" fill="#d9b9a5" opacity="0.83"/>
+  <path d="M0 729.1739197530864 C 400.90123456790127 586.8152006172838 931.374742798354 790.1847993827159 1200 637.6576003086418 L 1200 900 L 0 900 Z" fill="#c49a83" opacity="0.77"/>
+  <path d="M0 890.3854938271604 C 263.23765432098764 672.0362654320986 920.1748971193416 983.9637345679012 1200 750.0181327160493 L 1200 900 L 0 900 Z" fill="#a97a62" opacity="0.71"/>
+  <rect width="1200" height="900" filter="url(#grain-journal-2)" opacity=".9"/>
+</svg>
